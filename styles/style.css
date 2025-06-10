@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
+
 
 nav {
     max-width: 968px;
@@ -55,12 +57,19 @@ nav .bar {
 
 /* INFO */
 
+.info {
+    width: auto;
+    background-color: azure;
+}
+
 .info ul {
     display: flex;
+    margin: auto;
+    width: 968px;
 }
 
 .info ul li {
-    flex: 1/3;
+    flex: 1;
     height: 480px;
     width: auto;
     background-color: blanchedalmond;
@@ -74,4 +83,25 @@ nav .bar {
     text-align: center;
     margin: auto;
     display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: aqua;
+
+}
+
+footer>ul {
+    width: 968px;
+    display: flex;
+    height: 240px;
+    margin: auto;
+}
+
+footer>ul>li {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
