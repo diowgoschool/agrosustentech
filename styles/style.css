@@ -1,0 +1,30 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    max-width: 968px;
+    display: flex;
+    flex-basis: 1;
+    margin: auto;
+}
+
+nav div {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav .bar {
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+    border-radius: 2px;
+}
