@@ -1,7 +1,7 @@
 * {
-    display: block;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -27,4 +27,28 @@ nav .bar {
     background-color: black;
     margin-bottom: 3px;
     border-radius: 2px;
+}
+
+/* HERO */
+.hero {
+    width: auto;
+    height: 720px;
+    background-color: gray;
+}
+
+.hero .image {
+    width: 1048px;
+    height: 720px;
+    background-color: beige;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero .image .info {
+    flex: 0.4
 }
