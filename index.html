@@ -6,82 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./styles/style.css" rel="stylesheet">
+
 </head>
-<div class="main-width">
-    <nav>
-        <div>
-            <h1>
-                AgroSustenTech
-            </h1>
-        </div>
-        <div>
-            <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Conteúdos</a></li>
-                <li><a href="">Contato</a></li>
-                <li>
-                    <div class="hamburguer">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="hero">
-        <div class="image">
-            <div class="text">
-                <h1>Tecnologia e Sustentabilidade no Campo</h1>
-                <p>Promovendo práticas agrícolas eficientes e sustentáveis por meio da inovação tecnológica</p>
-            </div>
-        </div>
-    </section>
-    <section class="info">
-        <ul>
-            <li>
-                <h1>Otimização de Processos</h1>
-                <img src="http://placehold.co/160x160">
-                <p>Como a tecnologia pode aumentar a eficiência produtiva no campo</p>
-                <button>Saiba mais</button>
-            </li>
-            <li>
-                <h1>Redução de Desperdícios</h1>
-                <img src="http://placehold.co/160x160">
-                <p>Boas práticas para minimizar o uso excessivo de recursos</p>
-                <button>Saiba mais</button>
-            </li>
-            <li>
-                <h1>Sustentabilidade Socioambiental</h1>
-                <img src="http://placehold.co/160x160">
-                <p>Melhorando a produção respeitando o meio ambiente</p>
-                <button>Saiba mais</button>
-            </li>
-        </ul>
-    </section>
-    <footer>
-        <ul>
-            <li>
-                <ul>
-                    <li>
-                        <img src="http://placehold.co/40x40" alt="">
-                        <img src="http://placehold.co/40x40" alt="">
-                        <img src="http://placehold.co/40x40" alt="">
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <img src="http://placehold.co/160x160" alt="">
-            </li>
-            <li>
-                <img src="http://placehold.co/160x160" alt="">
-            </li>
-        </ul>
-    </footer>
-</div>
 
 <body>
+    <div class="main-width">
+        <nav>
+            <div>
+                <h1>
+                    AgroSustenTech
+                </h1>
+            </div>
+            <div class="nav-links-wrapper">
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Conteúdos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="image">
+                <div class="text">
+                    <h1>Tecnologia e Sustentabilidade no Campo</h1>
+                    <p>Promovendo práticas agrícolas eficientes e sustentáveis por meio da inovação tecnológica</p>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <ul>
+                <li>
+                    <h1>Otimização de Processos</h1>
+                    <img src="images/icon-3.png">
+                    <p>Como a tecnologia pode aumentar a eficiência produtiva no campo</p>
+                    <button>Saiba mais</button>
+                </li>
+                <li>
+                    <h1>Redução de Desperdícios</h1>
+                    <img src="images/icon-1.png">
+                    <p>Boas práticas para minimizar o uso excessivo de recursos</p>
+                    <button>Saiba mais</button>
+                </li>
+                <li>
+                    <h1>Sustentabilidade Socioambiental</h1>
+                    <img src="images/icon-2.png">
+                    <p>Melhorando a produção respeitando o meio ambiente</p>
+                    <button>Saiba mais</button>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+                            <img src="http://placehold.co/40x40" alt="">
+                            <img src="http://placehold.co/40x40" alt="">
+                            <img src="http://placehold.co/40x40" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="http://placehold.co/160x160" alt="">
+                </li>
+                <li>
+                    <img src="http://placehold.co/160x160" alt="">
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        const hamburguer = document.querySelector(".hamburguer");
+        const nav = document.querySelector("nav")
+
+
+        hamburguer.addEventListener("click", () => {
+            nav.classList.toggle("nav-open")
+        })
+    </script>
 </body>
 
 </html>
