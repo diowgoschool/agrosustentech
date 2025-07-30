@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - AgroSustenTech</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../acessibility/style.css" />
+    <script type="text/javascript" src="../acessibility/script.js"></script>
+</head>
+
+<body>
+
+    <div class="main-width">
+        <nav>
+            <div>
+                <h1>
+                    AgroSustenTech
+                </h1>
+            </div>
+            <div class="nav-links-wrapper">
+                <ul>
+                    <li><a href="../">Início</a></li>
+                    <li><a href="../about/">Sobre</a></li>
+                    <li><a href="../#info">Conteúdos</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="about-content">
+            <div class="about-info-block">
+                <h2>Nossa Missão</h2>
+                <p>Este site é a proposta do projeto AgroSustenTech de forma educativa e funcional, com linguagem acessível e design atrativo, que apresente conteúdos voltados especialmente para pequenos e médios produtores rurais e prestadores de serviços, mas não só para eles, como também para todos os interessados no assunto, como estudantes, professores e comunidade em geral. Visando melhorar a eficiência produtiva e promover a sustentabilidade no contexto do Arranjo Produtivo Local (APL) de Cambira/PR, e região, onde o agronegócio e o setor de serviços são predominantes, se enquadrando perfeitamente nas duas áreas dos cursos técnicos ofertados pelo Colégio Estadual Cívico-Militar Rosa Delúcia Calsavara, Ensino Fundamental, Médio e Profissional, da cidade de Cambira. Além disso, a proposta prevê uma parceria com o Colégio Estadual Rui Barbosa, Ensino Fundamental, Médio e Profissional. 
+    
+            </p>
+            <h2>Justificativa</h2>
+            <p>            
+            A escolha pelo formato do site se baseia no crescente acesso à internet na zona rural e entre microempreendedores. A criação do AgroSustenTech busca unir os conhecimentos técnicos dos cursos de Agronegócio e Desenvolvimento de Sistemas em uma proposta multidisciplinar, prática e acessível, que valoriza o contexto local e o protagonismo estudantil. Além disso, a parceria com o Colégio Estadual Rui Barbosa fortalece o intercâmbio de experiências e contribui para a construção coletiva do conhecimento, ampliando o impacto do projeto, pois se verifica com frequência, a dificuldade de acesso a conteúdos práticos, tecnológicos e sustentáveis, adaptados à realidade desses produtores e empreendedores, que muitas vezes desconhecem como ferramentas digitais e boas práticas podem transformar seus negócios.
+            </p>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+                            <img src="http://placehold.co/40x40" alt="Ícone de Rede Social">
+                            <img src="http://placehold.co/40x40" alt="Ícone de Rede Social">
+                            <img src="http://placehold.co/40x40" alt="Ícone de Rede Social">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="http://placehold.co/160x160" alt="Logo AgroSustenTech">
+                </li>
+                <li>
+                    <img src="http://placehold.co/160x160" alt="Logo Parceria">
+                </li>
+            </ul>
+        </footer>
+
+                    
+    </div>
+    <script>
+        const hamburguer = document.querySelector(".hamburguer");
+        const nav = document.querySelector("nav")
+
+
+        hamburguer.addEventListener("click", () => {
+            nav.classList.toggle("nav-open")
+        })
+
+        var element = document.getElementById("markdown-content");
+        element.innerHTML = MarkdownToHtml.parse(element.innerHTML);
+    </script>
+    <script type="text/javascript">
+        ACCESSIBILITY.init();
+    </script>
+
+</body>
+
+</html>

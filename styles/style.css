@@ -244,7 +244,7 @@ nav .nav-links-wrapper ul li a {
 }
 
 nav .nav-links-wrapper ul li a:hover {
-    background-color: #e0eee0;
+    background-color: rgb(252, 246, 240);
 }
 
 /* Hamburger menu (hidden by default on desktop) */
@@ -330,7 +330,7 @@ nav .hamburguer .bar {
 .info ul li {
     flex: 1;
     background: #fcf6f0;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -391,6 +391,7 @@ nav .hamburguer .bar {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 50px;
+    width: 100%;
 
 }
 
@@ -569,12 +570,6 @@ footer>ul>li img {
 
 }
 
-.about-new > div {
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    background-color: red;
-}
 
 .about-new p{
     margin-left: 10px;
@@ -583,6 +578,7 @@ footer>ul>li img {
 
 .news-section > p {
     line-height: 1.5;
+
 }
 
 .news-section > img {
@@ -594,7 +590,6 @@ footer>ul>li img {
 
 .news-title {
     font-size: 48px;
-    margin-top: 72px;
 }
 
 #markdown-content {
@@ -606,4 +601,147 @@ footer>ul>li img {
 
 #markdown-content > p {
     text-indent: 70px;
+}
+
+.news-container {
+    background: #ecf5cd;
+    padding-top: 72px;
+
+}
+
+/* ABOUT US PAGE */
+
+.about-text h1 {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #ffffff;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold */
+}
+
+.about-text p {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #e0eee0;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 300; /* Light */
+}
+
+.about-content {
+    background: #fff;
+    padding: 60px 40px;
+    max-width: 1048px;
+    margin: 0 auto;
+}
+
+.about-info-block {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: #fcf6f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-info-block h2 {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #2e6635;
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700; /* Bold */
+}
+
+.about-info-block p {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: 400; /* Book/Regular */
+    text-indent: 72px;
+    margin-bottom: 48px;
+}
+
+.about-info-block ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.about-info-block ul li {
+    flex: 1;
+    min-width: 250px; /* Largura mínima para os itens */
+    margin: 15px;
+    padding: 25px;
+    background: #fdfaf7;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.about-info-block ul li h3 {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #3d7e46;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600; /* SemiBold */
+}
+
+.about-info-block ul li p {
+    font-family: 'ChronicaPro', sans-serif;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300; /* Light */
+    text-align: center;
+}
+
+
+/* Responsive adjustments for About Us page */
+@media (max-width: 768px) {
+    .about-text h1 {
+        font-size: 38px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-info-block h2 {
+        font-size: 30px;
+    }
+
+    .about-info-block ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info-block ul li {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .about-text h1 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-info-block {
+        padding: 20px;
+    }
+}
+
+
+hr {
+    margin-top: 48px;
+    margin-bottom: 48px;
 }

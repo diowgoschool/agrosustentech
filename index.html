@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    
-    <div class="main-width">        <nav>
+
+    <div class="main-width">
+        <nav>
             <div>
                 <h1>
                     AgroSustenTech
@@ -21,9 +22,8 @@
             <div class="nav-links-wrapper">
                 <ul>
                     <li><a href="">Início</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Conteúdos</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="./about/index.html">Sobre</a></li>
+                    <li><a href="#info">Conteúdos</a></li>
                 </ul>
                 <div class="hamburguer">
                     <div class="bar"></div>
@@ -40,13 +40,17 @@
                 </div>
             </div>
         </section>
-        <section class="info">
+        <section class="info" id="info">
             <ul>
                 <li>
-                    <h1>Otimização de Processos</h1>
+                    <h1>Turismo Regenerativo no Campo</h1>
                     <img src="images/icon-3.png">
-                    <p>Como a tecnologia pode aumentar a eficiência produtiva no campo</p>
-                    <button>Saiba mais</button>
+                    <p>Como o turismo pode gerar novas oportunidades no campo</p>
+                    <a href="./news/a-new/a-new.html">
+                        <button>
+                            Leia sobre
+                        </button>
+                    </a>
                 </li>
                 <li>
                     <h1>Redução de Desperdícios</h1>
@@ -62,19 +66,7 @@
                 </li>
             </ul>
         </section>
-        <section class="display-news">
-            <ul>
-                <li>
-                    <img src="images/icon-3.png">
-                    <div>
-                        <h1>Otimização de Processos</h1>
-                        <p>Como a tecnologia pode aumentar a eficiência produtiva no campo</p>
-                        <button>Saiba mais</button>
-                    </div>
-                </li>
-               
-            </ul>
-        </section>
+
         <footer>
             <ul>
                 <li>
@@ -104,10 +96,10 @@
             nav.classList.toggle("nav-open")
         })
     </script>
-        <script type="text/javascript">
-    ACCESSIBILITY.init();
+    <script type="text/javascript">
+        ACCESSIBILITY.init();
     </script>
-    
+
 </body>
 
 </html>
