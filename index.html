@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./styles/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./acessibility/style.css"/>
+    <script type="text/javascript" src="./acessibility/script.js"></script>
 </head>
 
 <body>
-    <div class="main-width">
-        <nav>
+    
+    <div class="main-width">        <nav>
             <div>
                 <h1>
                     AgroSustenTech
@@ -61,6 +62,19 @@
                 </li>
             </ul>
         </section>
+        <section class="display-news">
+            <ul>
+                <li>
+                    <img src="images/icon-3.png">
+                    <div>
+                        <h1>Otimização de Processos</h1>
+                        <p>Como a tecnologia pode aumentar a eficiência produtiva no campo</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </li>
+               
+            </ul>
+        </section>
         <footer>
             <ul>
                 <li>
@@ -90,6 +104,10 @@
             nav.classList.toggle("nav-open")
         })
     </script>
+        <script type="text/javascript">
+    ACCESSIBILITY.init();
+    </script>
+    
 </body>
 
 </html>

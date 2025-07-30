@@ -554,3 +554,56 @@ footer>ul>li img {
         justify-content: center;
     }
 }
+
+/* NOTICIAS NA HOME */
+.display-news > ul > li {
+    display: flex;
+
+}
+
+/* NOTICIA */
+
+.about-new {
+    display: flex;
+    align-items: center;
+
+}
+
+.about-new > div {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: red;
+}
+
+.about-new p{
+    margin-left: 10px;
+}
+
+
+.news-section > p {
+    line-height: 1.5;
+}
+
+.news-section > img {
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+    display: block;
+}
+
+.news-title {
+    font-size: 48px;
+    margin-top: 72px;
+}
+
+#markdown-content {
+    line-height: 1.5;
+    font-size: 18px;
+    width: 80%;
+    text-align: justify !important;
+}
+
+#markdown-content > p {
+    text-indent: 70px;
+}
