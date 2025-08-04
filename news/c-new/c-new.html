@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../../styles/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../acessibility/style.css" />
+    <script type="text/javascript" src="../../acessibility/script.js"></script>
+  </head>
+
+  <body>
+    <div class="main-width">
+      <script src="../../src/markdown-to-html.min.js"></script>
+      <nav>
+        <div>
+          <a href="/"><h1>AgroSustenTech</h1></a>
+        </div>
+        <div class="nav-links-wrapper">
+          <ul>
+            <li><a href="../../">Início</a></li>
+            <li><a href="../../about/">Sobre</a></li>
+            <li><a href="../../#info">Conteúdos</a></li>
+          </ul>
+          <div class="hamburguer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+      <section class="news-container">
+        <h1 class="news-title">
+          A Conexão Viva entre o Agronegócio e os Objetivos de Desenvolvimento Sustentável
+        </h1>
+        <div class="about-new">
+          <p>Por Isabelly M. Mota. Publicado</p>
+          <p>01/08/2025 às 11:52</p>
+        </div>
+        <section class="news-section">
+          <img src="./img.png" alt="" />
+          <hr />
+          <div id="markdown-content">
+            Embora, à primeira vista, sustentabilidade e agronegócio possam parecer conceitos opostos, na prática, eles se complementam e são indissociáveis. Com base nessa perspectiva, os estudantes do 2º ano do Ensino Médio Técnico em Agronegócio desenvolveram, no componente curricular de Empreendedorismo, uma atividade enriquecedora voltada à temática da sustentabilidade.
+            Durante a proposta pedagógica, os alunos produziram maquetes e cartazes abordando temas como fontes de energia renovável, o papel das empresas na preservação ambiental, o impacto das atividades econômicas sobre a vida marinha, entre outros assuntos pertinentes à pauta ambiental.
+            As maquetes representavam diferentes cenários: de um lado, áreas preservadas; de outro, regiões degradadas. Essa dualidade permitiu reflexões aprofundadas sobre os efeitos das ações humanas e empresariais no meio ambiente, bem como sobre as práticas sustentáveis que podem ser adotadas no setor agropecuário.
+            A atividade não apenas estimulou o pensamento crítico e criativo dos estudantes, como também despertou o interesse da comunidade escolar, atraindo olhares curiosos durante a exposição. “Ao abordar a sustentabilidade, abordamos um tema que nos inclui a todos — afinal, somos diretamente dependentes dos recursos naturais e temos o dever de preservá-los para as futuras gerações. A ação deve ser imediata: o momento de agir é agora”, salientou Isabelly.
+            A apresentação, realizada durante o horário de aula, na sala, contou com a presença do coordenador do curso técnico em Agronegócio, professor Fernando H. Rivelini e da professora Isadora Campos. Ambos destacaram a importância do trabalho interdisciplinar e da compreensão ampliada sobre o papel das empresas na sustentabilidade. Os estudantes observaram que, por meio de pequenas atitudes e escolhas conscientes, é possível promover impactos positivos duradouros — afinal, somos os protagonistas do futuro.
+            Entre os exemplos citados pelos grupos, destacam-se:
+            Minha Casa Solar: projeto governamental que proporciona acesso à energia solar para famílias de baixa renda;
+
+
+            Boticário: com práticas voltadas à reciclagem e reaproveitamento de materiais.
+
+
+            A Terra, com sua riqueza natural e paisagens exuberantes, exige de nós um uso responsável e equilibrado de seus recursos. As ações de um único indivíduo ou organização podem gerar impactos significativos — positivos ou negativos — sobre o meio ambiente.
+            Educar para a sustentabilidade é, portanto, uma tarefa essencial das instituições de ensino. Sociedades bem informadas e conscientes tendem a prosperar de forma mais justa, ética e sustentável. Como afirmou Sêneca: “Para a ganância, toda a natureza é insuficiente.”
+            Essa atividade permitiu aos estudantes compreender, de forma prática e reflexiva, como o agronegócio pode — e deve — caminhar de mãos dadas com a sustentabilidade, reforçando o compromisso com um mundo mais equilibrado, onde a consciência ambiental prevaleça sobre a ganância.
+            
+            **Isabelly M. Mota é estudante do segundo ano do curso Técnico em Agronegócio do Colégio Estadual Cívico-Militar Rosa Delúcia Calsavara de Cambira e foi supervisionada pelo coordenador do Curso, professor Fernando Henrique Rivelini.**
+          </div>
+        </section>
+      </section>
+      
+    <footer>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <img src="../../images/sm_5b37de3263964.png" alt="" />
+              <a href="https://www.instagram.com/cerdcescola/">@cerdcescola</a>
+            </li>
+          </ul>
+        </li>
+        <li></li>
+        <li>
+          <img src="../../images/brasao_cpmpr270.png" alt="" />
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; Colégio Cívico Militar Rosa Delúcia Calsavara
+      </p>
+    </footer>
+
+    </div>
+
+    <script>
+      const hamburguer = document.querySelector(".hamburguer");
+      const nav = document.querySelector("nav");
+
+      hamburguer.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+      });
+
+      var element = document.getElementById("markdown-content");
+      element.innerHTML = MarkdownToHtml.parse(element.innerHTML);
+    </script>
+    <script type="text/javascript">
+      ACCESSIBILITY.init();
+    </script>
+  </body>
+</html>
