@@ -210,6 +210,11 @@ nav div:first-child h1 {
   color: #305528;
   font-size: 40px;
   font-weight: 400;
+
+}
+
+nav div:first-child a {
+    text-decoration: none !important
 }
 
 /* Styles for navigation links */
@@ -315,15 +320,16 @@ nav .hamburguer .bar {
 }
 
 .info ul li {
-  flex: 1;
-  background: #fcf6f0;
-  padding: 20px;
+  flex: 0.33;
+  flex-shrink: 0;
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 0 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .info ul li:first-child {
@@ -338,8 +344,9 @@ nav .hamburguer .bar {
   font-family: "ChronicaPro", sans-serif;
   color: #2e6635;
   font-size: 22px;
-  margin-bottom: 15px;
   font-weight: 700;
+  height: 100px;
+  align-self: flex-start !important;
 }
 
 .info ul li img {
@@ -367,7 +374,6 @@ nav .hamburguer .bar {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
-  margin-top: auto;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 50px;
@@ -428,6 +434,7 @@ footer > ul > li ul li img {
   height: 40px;
   border-radius: 50%;
   background-color: #d3d3d3;
+  margin: 5px;
 }
 
 footer > ul > li img {
@@ -571,7 +578,11 @@ footer > ul > li img {
 }
 
 .news-title {
+  font-family: "ChronicaPro", sans-serif;
   font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 #markdown-content {
@@ -606,7 +617,7 @@ footer > ul > li img {
   color: #e0eee0;
   font-size: 20px;
   line-height: 1.6;
-  font-weight: 300; /* Light */
+  font-weight: 100; /* Light */
 }
 
 .about-content {
@@ -636,7 +647,7 @@ footer > ul > li img {
 .about-info-block p {
   font-family: "ChronicaPro", sans-serif;
   color: #555;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   text-align: justify;
   font-weight: 400; /* Book/Regular */

@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./styles/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./acessibility/style.css" />
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./acessibility/style.css"/>
     <script type="text/javascript" src="./acessibility/script.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
+
     <div class="main-width">
-      <nav>
-        <div>
-          <h1>AgroSustenTech</h1>
-        </div>
-        <div class="nav-links-wrapper">
-          <ul>
-            <li><a href="">Início</a></li>
-            <li><a href="./about/index.html">Sobre</a></li>
-            <li><a href="#info">Conteúdos</a></li>
-          </ul>
-          <div class="hamburguer">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-      </nav>
-      <section class="hero">
-        <div class="image">
-          <div class="text">
-            <h1>Tecnologia e Sustentabilidade no Campo</h1>
-            <p>
-              Promovendo práticas agrícolas eficientes e sustentáveis por meio
-              da inovação tecnológica
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="info" id="info">
-        <ul>
-          <li>
-            <h1>Turismo Regenerativo no Campo</h1>
-            <img src="images/icon-3.png" />
-            <p>Como o turismo pode gerar novas oportunidades no campo</p>
-            <a href="./news/a-new/a-new.html">
-              <button>Leia sobre</button>
-            </a>
-          </li>
-          <li>
-            <h1>Redução de Desperdícios</h1>
-            <img src="images/icon-1.png" />
-            <p>Boas práticas para minimizar o uso excessivo de recursos</p>
-            <button>Saiba mais</button>
-          </li>
-          <li>
-            <h1>Sustentabilidade Socioambiental</h1>
-            <img src="images/icon-2.png" />
-            <p>Melhorando a produção respeitando o meio ambiente</p>
-            <button>Saiba mais</button>
-          </li>
-        </ul>
-      </section>
-
-      <footer>
-        <ul>
-          <li>
+        <nav>
+            <div>
+                <a href="/index.html"><h1>AgroSustenTech</h1></a>
+            </div>
+            <div class="nav-links-wrapper">
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="./about/index.html">Sobre</a></li>
+                    <li><a href="#info">Conteúdos</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="image">
+                <div class="text">
+                    <h1>Tecnologia e Sustentabilidade no Campo</h1>
+                    <p>Promovendo práticas agrícolas eficientes e sustentáveis por meio da inovação tecnológica</p>
+                </div>
+            </div>
+        </section>
+        <section class="info" id="info">
             <ul>
-              <li>
-                <img src="./images/sm_5b37de3263964.jpg" alt="" />
-                <a href="https://www.instagram.com/cerdcescola/"
-                  >@cerdcescola</a
-                >
-              </li>
+                <li>
+                    <h1>Turismo Regenerativo no Campo</h1>
+                    <img src="images/icon-3.png">
+                    <p>Como o turismo pode gerar novas oportunidades no campo</p>
+                    <a href="./news/a-new/a-new.html">
+                        <button>
+                            Leia sobre
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <h1>Agronegócio e Sustentabilidade</h1>
+                    <img src="images/icon-1.png">
+                    <p>Como o setor agrícola influencia a sustentabilidade global</p>
+                    <a href="./news/b-new/b-new.html">
+                        <button>
+                            Leia sobre
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <h1>Sustentabilidade Socioambiental</h1>
+                    <img src="images/icon-2.png">
+                    <p>Melhorando a produção respeitando o meio ambiente</p>
+                    <button>Saiba mais</button>
+                </li>
             </ul>
-          </li>
-          <li></li>
-          <li>
-            <img src="./images/brasao_cpmpr270.png" alt="" />
-          </li>
-        </ul>
-        <p class="copyright">
-          &copy; Colégio Cívico Militar Rosa Delúcia Calsavara
-        </p>
-      </footer>
+        </section>
+
+        <footer>
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+                            <img src="./images/sm_5b37de3263964.png" alt="">
+                            <a href="https://www.instagram.com/cerdcescola/">@cerdcescola</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    </li>
+                <li>
+                    <img src="./images/brasao_cpmpr270.png" alt="">
+                </li>
+            </ul>
+            <p class="copyright">&copy; Colégio Cívico Militar Rosa Delúcia Calsavara
+        </footer>
+
     </div>
     <script>
-      const hamburguer = document.querySelector(".hamburguer");
-      const nav = document.querySelector("nav");
+        const hamburguer = document.querySelector(".hamburguer");
+        const nav = document.querySelector("nav")
 
-      hamburguer.addEventListener("click", () => {
-        nav.classList.toggle("nav-open");
-      });
+
+        hamburguer.addEventListener("click", () => {
+            nav.classList.toggle("nav-open")
+        })
     </script>
     <script type="text/javascript">
-      ACCESSIBILITY.init();
+        ACCESSIBILITY.init();
     </script>
-  </body>
+
+</body>
+
 </html>
